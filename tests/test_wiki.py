@@ -1,11 +1,10 @@
-
 import allure
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have
 
 
 def test_wiki():
-    with allure.step("Check open welcome screen"):
+    with allure.step("Check open welckome screen"):
         browser.element((AppiumBy.ID, "org.wikipedia.alpha:id/primaryTextView")). \
             should(have.text("The Free Encyclopedia\n…in over 300 languages"))
 
